@@ -1,44 +1,49 @@
-# Nemat-Commits — Nemat Ullah
+<div align="center">
 
-> Craft over noise.
+# Nemat Ullah
 
-Personal landing page of **Nemat Ullah** — independent developer in Abbottabad, Pakistan.
-Web products, offline-first Android apps, and small worlds to play in.
+**Craft over noise.**
 
-**Type:** hand-built static site (HTML · CSS · vanilla JS) — no build step, no framework, no backend.
+Independent developer in **Abbottabad, Pakistan** — building web products,
+offline-first Android apps, and small worlds to play in.
 
-## Run locally
+[![Landing Page](https://img.shields.io/badge/Craft%20over%20noise.-b5502e?style=for-the-badge&labelColor=171512)](https://nemat-commits.github.io/Nemat-Commits/)
 
-```bash
-python3 -m http.server 4173 --bind 0.0.0.0
-```
+🌐 **[Visit the landing page →](https://nemat-commits.github.io/Nemat-Commits/)**
 
-Open <http://localhost:4173>.
+</div>
 
-## Structure
+---
 
-| Path | Purpose |
-| --- | --- |
-| `index.html` | The page — semantic, accessible, SEO/OG meta included |
-| `assets/css/styles.css` | Design system: warm-ivory paper, ink, one terracotta accent; light + dark themes |
-| `assets/js/main.js` | Theme persistence, live PKT clock, scroll reveals, counters, cursor-follow project preview, copy-email, form → prefilled mailto |
-| `assets/fonts/` | Self-hosted WOFF2 (Fraunces, Inter, IBM Plex Mono) — no font CDN dependency |
-| `assets/img/work/` | Editorial ink-illustration project artwork, generated fresh for this page |
+### What I do
 
-## Features
+- **Web, end to end** — React / Next.js frontends, Node backends, deployed and fast
+- **Pocket-sized tools** — offline-first Android apps with Capacitor & Flutter — Noor Salah, Scientific Calculator Pro, Seerat-E-Nabawi
+- **Small worlds** — games & experiments in Unity/Godot — currently: TerraStep, a GPS territory-control MMO (FYP)
 
-- Light / dark theme with `prefers-color-scheme` default + persisted toggle
-- Live Pakistan (PKT) clock, in hero and footer
-- Cursor-following project previews on the work list (fine pointers only)
-- Animated stat counters, seamless capability ticker, scroll progress bar
-- Contact form opens a pre-filled email draft (`khannmat12@gmail.com`) — no data stored
-- Graceful `prefers-reduced-motion` support; self-hosted assets; zero network dependencies at runtime except a single cached GitHub API call with a static fallback
+### Shipped & live
 
-## Deploy
+| Project | What it is | Link |
+| --- | --- | --- |
+| **Noor Salah** | Offline prayer times & adhan Android app — emerald/gold, home-screen widget, Hijri calendar | [live ↗](https://nematullah9812.github.io/namaz-reminder/) |
+| **Scientific Calculator Pro** | Six-mode scientific calculator — React 19 in a native Android WebView shell | [live ↗](https://nematullah9812.github.io/scientific-calculator-pro/) |
+| **Vortex Labs** | PC builder & e-commerce experience for an enthusiast hardware brand (TypeScript) | [live ↗](https://vortex-labs-one.vercel.app) |
+| **Town Fitness Point** | Website for a neighbourhood fitness club | [live ↗](https://town-fitness-point-psi.vercel.app) |
+| **PawBin** | Smart street pet-waste bin concept — civic design, built to ship | [live ↗](https://pawbin.vercel.app) |
+| **TerraStep** | GPS territory-control MMO — verified Postgres claim engine + Dart prototype | [source ↗](https://github.com/Nemat-commits/terrastep) |
 
-Any static host works. For **GitHub Pages**: repo → *Settings → Pages → Deploy from a branch → this branch, `/ (root)`*.
-For **Vercel/Netlify**: import the repo, framework preset "Other", no build command, output dir = repo root.
+### Stack
 
-## Contact
+`TypeScript` · `JavaScript` · `React` · `Next.js` · `Node` · `PostgreSQL` · `Dart` · `Flutter` · `Capacitor` · `Svelte` · `Python` · `Unity` · `Godot`
 
-Nemat Ullah · [khannmat12@gmail.com](mailto:khannmat12@gmail.com) · [github.com/Nemat-commits](https://github.com/Nemat-commits) · WhatsApp +92 316 0545076
+### Elsewhere
+
+- 📧 [khannmat12@gmail.com](mailto:khannmat12@gmail.com)
+- 💬 WhatsApp: [+92 316 0545076](https://wa.me/923160545076)
+- 🐙 This profile — [22 public repositories, building in public since April 2025](https://github.com/Nemat-commits?tab=repositories)
+
+---
+
+<div align="center">
+<sub><i>Landing page source lives in this repo — plain HTML/CSS/JS, no build step.</i></sub>
+</div>
