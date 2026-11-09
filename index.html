@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nemat Ullah — Craft over noise. Independent developer, Abbottabad.</title>
+  <meta name="description" content="Nemat Ullah is an independent developer in Abbottabad, Pakistan building thoughtful web products, offline-first Android apps, and small games — 22 public repos, 7 live products, one obsession: quality.">
+  <meta name="author" content="Nemat Ullah">
+  <meta name="theme-color" content="#faf7f1" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#131210" media="(prefers-color-scheme: dark)">
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nemat Ullah — Craft over noise.">
+  <meta property="og:description" content="Independent developer in Abbottabad, Pakistan. Web products, offline-first Android apps, and playable experiments — built with intent.">
+  <meta property="og:image" content="assets/img/work/terrastep.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23171512'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-style='italic' font-size='36' fill='%23faf7f1' text-anchor='middle'%3EN%3C/text%3E%3Ccircle cx='49' cy='17' r='4' fill='%23b5502e'/%3E%3C/svg%3E">
+
+  <!-- Fonts (self-hosted) -->
+  <link rel="preload" href="assets/fonts/fraunces-latin-full-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/inter-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor-preview" id="cursorPreview" aria-hidden="true">
+    <img id="cursorPreviewImg" alt="" width="340" height="227">
+  </div>
+
+  <!-- ══════════ NAV ══════════ -->
+  <header class="site-nav" id="siteNav">
+    <div class="container nav-inner">
+      <a class="wordmark" href="#top" aria-label="Nemat Ullah — home">
+        <span class="wordmark-mark" aria-hidden="true">N<i>.</i></span>
+        <span class="wordmark-text">Nemat<br>Ullah</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="#opensource">Open Source</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M19.1 4.9l-1.7 1.7M6.6 17.4l-1.7 1.7"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M20.4 14.2A8.5 8.5 0 1 1 9.8 3.6a7 7 0 0 0 10.6 10.6Z"/></svg>
+        </button>
+        <a class="btn btn-solid nav-cta" href="#contact">Let’s talk<span aria-hidden="true">↗</span></a>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="nav-progress" aria-hidden="true"><span id="navProgressBar"></span></div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav aria-label="Mobile">
+      <a href="#work"><em>01</em>Work</a>
+      <a href="#opensource"><em>02</em>Open Source</a>
+      <a href="#about"><em>03</em>About</a>
+      <a href="#contact"><em>04</em>Contact</a>
+    </nav>
+    <div class="mobile-menu-foot">
+      <a href="mailto:khannmat12@gmail.com">khannmat12@gmail.com</a>
+      <a href="https://github.com/Nemat-commits" rel="noopener">github.com/Nemat-commits</a>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- ══════════ HERO ══════════ -->
+    <section class="hero" id="top" aria-labelledby="heroTitle">
+      <div class="container">
+        <div class="hero-meta mono">
+          <span><i class="pulse-dot" aria-hidden="true"></i>Available for the right project</span>
+          <span class="hero-meta-mid">Abbottabad, Pakistan · 34.15°N 73.22°E</span>
+          <span class="hero-meta-right"><span class="pkt-clock">00:00:00</span> PKT</span>
+        </div>
+
+        <h1 class="hero-title" id="heroTitle">
+          <span class="line reveal-line"><span>Craft</span></span>
+          <span class="line reveal-line"><span>over <em>noise.</em></span></span>
+        </h1>
+
+        <div class="hero-grid">
+          <div class="hero-intro">
+            <p class="hero-lede">
+              I’m <strong>Nemat Ullah</strong> — an independent developer building
+              <em>web products</em>, <em>offline-first Android apps</em>, and
+              <em>small worlds to play in</em>. From first sketch to shipped detail,
+              one obsession: it should feel obvious in your hands.
+            </p>
+
+            <div class="hero-ctas">
+              <a class="btn btn-solid btn-lg" href="#work">See the work<span aria-hidden="true">↓</span></a>
+              <a class="btn btn-ghost btn-lg" href="mailto:khannmat12@gmail.com">Say hello<span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+
+          <!-- Identity card -->
+          <div class="id-card reveal" aria-hidden="true">
+            <div class="id-card-head mono">
+              <span>ID / NEMAT-2025</span>
+              <span>EST. APR 2025</span>
+            </div>
+            <div class="id-card-body">
+              <div class="id-monogram">N<span>.</span></div>
+              <div class="id-fields mono">
+                <div><small>NAME</small>Nemat Ullah</div>
+                <div><small>ROLE</small>Independent Developer</div>
+                <div><small>BASE</small>Abbottabad, KPK, PK</div>
+                <div><small>STACK</small>TS · React · Next.js · Dart</div>
+              </div>
+            </div>
+            <div class="id-card-foot mono">
+              <span>WEB</span><span>ANDROID</span><span>GAMES</span><span>OPEN SOURCE</span>
+            </div>
+            <svg class="id-stamp" viewBox="0 0 120 120" aria-hidden="true">
+              <g class="stamp-rotate">
+                <defs><path id="stampCircle" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs>
+                <circle cx="60" cy="60" r="59" fill="var(--accent)"/>
+                <text><textPath href="#stampCircle">INDEPENDENT DEVELOPER · CRAFT OVER NOISE · EST. 2025 · </textPath></text>
+              </g>
+              <path d="M60 38v44M38 60h44" stroke="var(--paper)" stroke-width="2.4"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="ticker mono" aria-hidden="true">
+        <div class="ticker-track" id="tickerTrack">
+          <span>TypeScript</span><i>✳</i><span>React</span><i>✳</i><span>Next.js</span><i>✳</i><span>Node</span><i>✳</i><span>PostgreSQL</span><i>✳</i><span>Flutter</span><i>✳</i><span>Dart</span><i>✳</i><span>Svelte</span><i>✳</i><span>Python</span><i>✳</i><span>Capacitor</span><i>✳</i><span>Unity</span><i>✳</i><span>Godot</span><i>✳</i>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ BY THE NUMBERS ══════════ -->
+    <section class="stats" aria-label="By the numbers">
+      <div class="container">
+        <dl class="stats-grid">
+          <div class="stat reveal"><dt class="mono">Public repositories</dt><dd><span data-counter="22">22</span></dd></div>
+          <div class="stat reveal"><dt class="mono">Live products shipped</dt><dd><span data-counter="7">7</span></dd></div>
+          <div class="stat reveal"><dt class="mono">Commits &amp; counting</dt><dd><span data-counter="126">126</span></dd></div>
+          <div class="stat reveal"><dt class="mono">Building in public since</dt><dd><span class="stat-text">Apr ’25</span></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ══════════ 01 — SELECTED WORK ══════════ -->
+    <section class="section" id="work" aria-labelledby="workTitle">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-index mono"><span>01</span>/ Selected work</p>
+          <h2 class="section-title" id="workTitle">Shipped things,<br><em>not slides.</em></h2>
+          <p class="section-note">Six pieces that show the range — a final-year moonshot, two shipped Android apps, and production sites people actually visit.</p>
+        </div>
+
+        <ol class="work-list" id="workList">
+
+          <li class="work-item reveal" data-img="assets/img/work/terrastep.jpg">
+            <a class="work-link" href="https://github.com/Nemat-commits/terrastep" rel="noopener" aria-label="TerraStep — view source on GitHub">
+              <span class="work-num mono">01</span>
+              <span class="work-main">
+                <span class="work-title">TerraStep</span>
+                <span class="work-desc">GPS territory-control MMO on a zero-budget stack — build plan, verified Postgres claim engine &amp; playable Dart prototype. Final-year project.</span>
+                <span class="work-tags mono">Dart · PostgreSQL · Multi-agent Python</span>
+              </span>
+              <span class="work-meta mono"><span class="work-year">2026</span><span class="work-kind">FYP · Source</span></span>
+              <span class="work-arrow" aria-hidden="true">↗</span>
+            </a>
+            <img class="work-thumb" src="assets/img/work/terrastep.jpg" alt="Ink-style topographic map with a terracotta hex territory grid and flag" loading="lazy">
+          </li>
+
+          <li class="work-item reveal" data-img="assets/img/work/noor-salah.jpg">
+            <a class="work-link" href="https://nematullah9812.github.io/namaz-reminder/" rel="noopener" aria-label="Noor Salah — open live app">
+              <span class="work-num mono">02</span>
+              <span class="work-main">
+                <span class="work-title">Noor Salah</span>
+                <span class="work-desc">Offline prayer-times &amp; adhan reminder Android app — emerald/gold design, home-screen widget, Makkah reminders, Hijri (Pakistani) calendar. 100% on-device.</span>
+                <span class="work-tags mono">JavaScript · Capacitor · Android</span>
+              </span>
+              <span class="work-meta mono"><span class="work-year">2026</span><span class="work-kind">Live ↗</span></span>
+              <span class="work-arrow" aria-hidden="true">↗</span>
+            </a>
+            <img class="work-thumb" src="assets/img/work/noor-salah.jpg" alt="Ink-style crescent moon over a lone minaret and desert dunes" loading="lazy">
+          </li>
+
+          <li class="work-item reveal" data-img="assets/img/work/scientific-calculator.jpg">
+            <a class="work-link" href="https://nematullah9812.github.io/scientific-calculator-pro/" rel="noopener" aria-label="Scientific Calculator Pro — open live app">
+              <span class="work-num mono">03</span>
+              <span class="work-main">
+                <span class="work-title">Scientific Calculator Pro</span>
+                <span class="work-desc">Six-mode scientific calculator for Android — a React 19 single-file web app running inside a native WebView shell, built in days and polished for real hands.</span>
+                <span class="work-tags mono">React 19 · WebView · Android</span>
+              </span>
+              <span class="work-meta mono"><span class="work-year">2026</span><span class="work-kind">Live ↗</span></span>
+              <span class="work-arrow" aria-hidden="true">↗</span>
+            </a>
+            <img class="work-thumb" src="assets/img/work/scientific-calculator.jpg" alt="Ink-style technical drawing of a scientific calculator keypad" loading="lazy">
+          </li>
+
+          <li class="work-item reveal" data-img="assets/img/work/vortex-labs.jpg">
+            <a class="work-link" href="https://vortex-labs-one.vercel.app" rel="noopener" aria-label="Vortex Labs — open live site">
+              <span class="work-num mono">04</span>
+              <span class="work-main">
+                <span class="work-title">Vortex Labs<span class="work-repo mono">Arena-Pc</span></span>
+                <span class="work-desc">High-performance PC builder &amp; e-commerce experience for an enthusiast hardware brand — typed end-to-end, fast, and dramatic.</span>
+                <span class="work-tags mono">TypeScript · Next.js</span>
+              </span>
+              <span class="work-meta mono"><span class="work-year">2026</span><span class="work-kind">Live ↗</span></span>
+              <span class="work-arrow" aria-hidden="true">↗</span>
+            </a>
+            <img class="work-thumb" src="assets/img/work/vortex-labs.jpg" alt="Ink-style gaming PC tower radiating vortex energy rings" loading="lazy">
+          </li>
+
+          <li class="work-item reveal" data-img="assets/img/work/town-fitness.jpg">
+            <a class="work-link" href="https://town-fitness-point-psi.vercel.app" rel="noopener" aria-label="Town Fitness Point — open live site">
+              <span class="work-num mono">05</span>
+              <span class="work-main">
+                <span class="work-title">Town Fitness Point</span>
+                <span class="work-desc">Website for a neighbourhood fitness club — training goals, conditioning programs, and membership conversion, designed for walk-in phones.</span>
+                <span class="work-tags mono">TypeScript · Vercel</span>
+              </span>
+              <span class="work-meta mono"><span class="work-year">2026</span><span class="work-kind">Live ↗</span></span>
+              <span class="work-arrow" aria-hidden="true">↗</span>
+            </a>
+            <img class="work-thumb" src="assets/img/work/town-fitness.jpg" alt="Ink-style kettlebell beside an ECG pulse line" loading="lazy">
+          </li>
+
+          <li class="work-item reveal" data-img="assets/img/work/pawbin.jpg">
+            <a class="work-link" href="https://pawbin.vercel.app" rel="noopener" aria-label="PawBin — open live site">
+              <span class="work-num mono">06</span>
+              <span class="work-main">
+                <span class="work-title">PawBin</span>
+                <span class="work-desc">Concept for smart street pet-waste bins — a civic-design landing page making an unsexy problem feel inevitable and obvious.</span>
+                <span class="work-tags mono">HTML · CSS · JavaScript</span>
+              </span>
+              <span class="work-meta mono"><span class="work-year">2026</span><span class="work-kind">Live ↗</span></span>
+              <span class="work-arrow" aria-hidden="true">↗</span>
+            </a>
+            <img class="work-thumb" src="assets/img/work/pawbin.jpg" alt="Ink-style smart pet-waste bin with a paw print emblem and recycling loop" loading="lazy">
+          </li>
+        </ol>
+
+        <p class="work-more reveal"><a class="arrow-link" href="https://github.com/Nemat-commits?tab=repositories" rel="noopener">All 22 repositories on GitHub<span aria-hidden="true">→</span></a></p>
+      </div>
+    </section>
+
+    <!-- ══════════ 02 — OPEN SOURCE ══════════ -->
+    <section class="section section-tinted" id="opensource" aria-labelledby="osTitle">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-index mono"><span>02</span>/ Open source &amp; experiments</p>
+          <h2 class="section-title" id="osTitle">Small bets,<br><em>public ledgers.</em></h2>
+          <p class="section-note">Side quests and works-in-progress — kept public on purpose.</p>
+        </div>
+
+        <div class="os-grid">
+          <a class="os-card reveal" href="https://github.com/Nemat-commits/yt-extension" rel="noopener">
+            <div class="os-card-top mono"><span class="lang-dot" style="--dot:#ff3e00"></span>Svelte<span class="os-updated">active · Nov ’26</span></div>
+            <h3>yt-extension</h3>
+            <p>A Svelte browser extension for YouTube — scratching my own itch, in public, with real pull requests.</p>
+            <span class="os-link mono">github.com/Nemat-commits/yt-extension →</span>
+          </a>
+
+          <a class="os-card reveal" href="https://github.com/Nemat-commits/FYP---TerraStep" rel="noopener">
+            <div class="os-card-top mono"><span class="lang-dot" style="--dot:#3572a5"></span>Python<span class="os-updated">Oct ’26</span></div>
+            <h3>TerraStep Agents</h3>
+            <p>The multi-agent brain behind TerraStep — autonomous agents coordinating city-scale territory play.</p>
+            <span class="os-link mono">github.com/Nemat-commits/FYP---TerraStep →</span>
+          </a>
+
+          <a class="os-card reveal" href="https://github.com/Nemat-commits/Typing-game" rel="noopener">
+            <div class="os-card-top mono"><span class="lang-dot" style="--dot:#f1e05a"></span>JavaScript<span class="os-updated">Sep ’26</span></div>
+            <h3>Typing Game</h3>
+            <p>A fast, opinionated typing trainer — because muscle memory is a feature, not a bonus.</p>
+            <span class="os-link mono">github.com/Nemat-commits/Typing-game →</span>
+          </a>
+
+          <a class="os-card reveal" href="https://github.com/Nemat-commits/Seerat-E-Nabawi" rel="noopener">
+            <div class="os-card-top mono"><span class="lang-dot" style="--dot:#00b4ab"></span>Dart<span class="os-updated">Aug ’26</span></div>
+            <h3>Seerat-E-Nabawi</h3>
+            <p>A Flutter companion for reading the Seerah — quiet technology for a loud world.</p>
+            <span class="os-link mono">github.com/Nemat-commits/Seerat-E-Nabawi →</span>
+          </a>
+
+          <a class="os-card reveal" href="https://github.com/Nemat-commits/indexsol" rel="noopener">
+            <div class="os-card-top mono"><span class="lang-dot" style="--dot:#e34c26"></span>HTML<span class="os-updated">Jun ’26 · live</span></div>
+            <h3>IndexSoL v2</h3>
+            <p>Iteration two of IndexSoL — a shipping discipline: version it, learn it, ship it again.</p>
+            <span class="os-link mono">indexsol.vercel.app →</span>
+          </a>
+
+          <a class="os-card reveal" href="https://github.com/Nemat-commits/Meraas" rel="noopener">
+            <div class="os-card-top mono"><span class="lang-dot" style="--dot:#3572a5"></span>Python<span class="os-updated">Sep ’26</span></div>
+            <h3>Meraas</h3>
+            <p>Python groundwork for the next thing — curiosity, expressed as a repository.</p>
+            <span class="os-link mono">github.com/Nemat-commits/Meraas →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ 03 — ABOUT ══════════ -->
+    <section class="section" id="about" aria-labelledby="aboutTitle">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-index mono"><span>03</span>/ About</p>
+          <h2 class="section-title" id="aboutTitle">A little logic,<br><em>a lot of intent.</em></h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-copy">
+            <p class="copy-lede reveal">Hey — I’m Nemat. I’m a developer from the hills of Abbottabad, Pakistan, and I like taking things from a rough first sketch all the way to the satisfying final detail.</p>
+            <p class="reveal">My craft sits between <strong>React &amp; Next.js</strong> frontends, <strong>Node</strong> backends, and <strong>cross-platform Android</strong> with Capacitor and Flutter. Lately I’ve been deep in <strong>game feel</strong> — physics, shaders, and why a jump either feels great or doesn’t — with TerraStep, my final-year GPS territory-control MMO.</p>
+            <p class="reveal">Different screens, different constraints — same standard: make the thing feel obvious once it’s in your hands. I’d rather ship one thing I’m proud of than ten I’m not.</p>
+
+            <div class="about-links reveal">
+              <a class="arrow-link" href="https://github.com/Nemat-commits" rel="noopener">github.com/Nemat-commits<span aria-hidden="true">→</span></a>
+              <a class="arrow-link" href="mailto:khannmat12@gmail.com">khannmat12@gmail.com<span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+
+          <aside class="now-panel reveal" aria-label="Currently">
+            <p class="now-title mono"><i class="pulse-dot" aria-hidden="true"></i>Currently — Nov 2026</p>
+            <ul>
+              <li><span class="now-tag mono">Building</span>TerraStep — final-year project, verified Postgres claim engine + playable Dart prototype</li>
+              <li><span class="now-tag mono">Shipping</span>yt-extension — my first Svelte extension, PRs and all</li>
+              <li><span class="now-tag mono">Learning</span>Game feel, shaders &amp; netcode — Unity / Godot</li>
+              <li><span class="now-tag mono">Open to</span>Freelance builds, collaborations &amp; the right full-time role</li>
+            </ul>
+          </aside>
+        </div>
+
+        <ul class="principles" aria-label="How I work">
+          <li class="reveal"><span class="principle-num mono">I.</span><h3>Obvious beats clever</h3><p>If the user needs a manual, the design failed. Simple is the hardest setting.</p></li>
+          <li class="reveal"><span class="principle-num mono">II.</span><h3>Details are the product</h3><p>The empty states, the offline mode, the 300 ms of latency — that’s where quality lives.</p></li>
+          <li class="reveal"><span class="principle-num mono">III.</span><h3>Ship, then sharpen</h3><p>A live rough thing teaches more than a perfect invisible one. Iterate in public.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ══════════ 04 — CONTACT ══════════ -->
+    <section class="section contact" id="contact" aria-labelledby="contactTitle">
+      <div class="container">
+        <p class="section-index mono"><span>04</span>/ Contact</p>
+        <h2 class="contact-title" id="contactTitle">Let’s make<br>something <em>worth making.</em></h2>
+
+        <div class="contact-grid">
+          <div class="contact-left">
+            <p class="contact-lede">Have a product to build, an app to ship, or a game that exists only in your head? Tell me about it — I read everything, and I reply to almost everything.</p>
+
+            <ul class="contact-channels">
+              <li>
+                <a href="mailto:khannmat12@gmail.com" class="channel">
+                  <span class="channel-label mono">Email</span>
+                  <span class="channel-value">khannmat12@gmail.com</span>
+                </a>
+                <button class="copy-btn mono" id="copyEmailBtn" type="button" data-email="khannmat12@gmail.com" aria-label="Copy email address">Copy</button>
+              </li>
+              <li>
+                <a class="channel" href="https://wa.me/923160545076?text=Hi%20Nemat%20%E2%80%94%20I%20found%20your%20portfolio." rel="noopener">
+                  <span class="channel-label mono">WhatsApp</span>
+                  <span class="channel-value">+92 316 0545076</span>
+                </a>
+              </li>
+              <li>
+                <a class="channel" href="https://github.com/Nemat-commits" rel="noopener">
+                  <span class="channel-label mono">GitHub</span>
+                  <span class="channel-value">@Nemat-commits · <span id="ghReposLive">22</span> repos</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact-form reveal" id="contactForm" novalidate>
+            <div class="field">
+              <label class="mono" for="fName">Your name</label>
+              <input type="text" id="fName" name="name" required autocomplete="name" placeholder="Ada Lovelace">
+            </div>
+            <div class="field">
+              <label class="mono" for="fEmail">Your email</label>
+              <input type="email" id="fEmail" name="email" required autocomplete="email" placeholder="you@example.com">
+            </div>
+            <div class="field">
+              <label class="mono" for="fType">What are we making?</label>
+              <div class="select-wrap">
+                <select id="fType" name="type">
+                  <option>A web product</option>
+                  <option>An Android app</option>
+                  <option>A game</option>
+                  <option>Something else entirely</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label class="mono" for="fMessage">The short version</label>
+              <textarea id="fMessage" name="message" required rows="4" placeholder="Two or three sentences is plenty…"></textarea>
+            </div>
+            <button class="btn btn-solid btn-lg btn-full" type="submit">Send it<span aria-hidden="true">→</span></button>
+            <p class="form-note mono">Opens your email app with everything pre-filled — nothing is stored on this page.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="footer-mark" aria-hidden="true">N<i>.</i></span>
+          <p>Nemat Ullah — independent developer.<br>Designed &amp; built by hand in Abbottabad, Pakistan.</p>
+        </div>
+        <nav class="footer-col" aria-label="Site">
+          <p class="mono">Site</p>
+          <a href="#work">Work</a><a href="#opensource">Open Source</a><a href="#about">About</a><a href="#contact">Contact</a>
+        </nav>
+        <nav class="footer-col" aria-label="Elsewhere">
+          <p class="mono">Elsewhere</p>
+          <a href="https://github.com/Nemat-commits" rel="noopener">GitHub</a>
+          <a href="https://wa.me/923160545076" rel="noopener">WhatsApp</a>
+          <a href="mailto:khannmat12@gmail.com">Email</a>
+        </nav>
+        <div class="footer-col">
+          <p class="mono">Local time</p>
+          <p class="footer-time"><span class="pkt-clock">00:00:00</span><small>PKT · UTC+5</small></p>
+        </div>
+      </div>
+      <div class="footer-bar">
+        <p class="mono">© <span id="footYear">2026</span> Nemat Ullah · Craft over noise.</p>
+        <a class="to-top mono" href="#top">Back to top<span aria-hidden="true">↑</span></a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast mono" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
